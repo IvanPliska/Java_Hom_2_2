@@ -9,7 +9,7 @@ public class MainQA38 {
         System.out.println("Начальный счет клиента: " + startingAccount + " рублей");
         System.out.println("Сумма пополнения счета: " + payAccount + " рублей");
 
-        if (payAccount >= 1000) {
+        if (payAccount > 1000) {
             int countBonus = payAccount / numberOfBonus; // количество бонусов за пополнение счета от 1000 рублей
             int finalAccount = startingAccount + payAccount + countBonus;
             System.out.println("Итоговая сумма на счету клиента: " + finalAccount + " с учетом " + countBonus + " бонусов");
